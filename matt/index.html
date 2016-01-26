@@ -30,5 +30,27 @@
                 </td>
             </tr>
         </table>
+        <script>
+            $(function() {
+            var base="#0000";
+            var change = 10;
+            var step=10
+            setInterval(function() { 
+                if (change>90)
+                {
+                	step=-10;
+                }
+                if (change < 10)
+                {
+                	step=10
+                }
+                change=change+step;
+								var colour=base+change;
+
+
+                $("body").css("background",colour);
+            }, 500);
+        })
+        </script>
     </body>
 </html>
