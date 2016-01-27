@@ -34,15 +34,15 @@
             $(function() {
             var base="#0000";
             var change = 10;
-            var step=10
+            var step=5
             setInterval(function() { 
                 if (change>90)
                 {
-                	step=-10;
+                	step=-5;
                 }
                 if (change < 10)
                 {
-                	step=10
+                	step=5
                 }
                 change=change+step;
 		var colour=base+change;
@@ -50,7 +50,7 @@
 
                 $("body").css("background",colour);
                 $("#head").css("color",colour2);
-            }, 100);
+            }, 10);
         })
         </script>
     </body>
