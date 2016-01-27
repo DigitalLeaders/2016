@@ -17,7 +17,7 @@
         </style>
     </head>
     <body bgcolor="#1E3296">
-        <h1 class="bright">Matty</h1>
+        <h1 id="head" class="bright">Matty</h1>
         <table>
             <tr>
                 <td>
@@ -45,10 +45,11 @@
                 	step=10
                 }
                 change=change+step;
-								var colour=base+change;
-
+		var colour=base+change;
+		var colour2="#"+change+"2020";
 
                 $("body").css("background",colour);
+                $("head").css("color",colour2)
             }, 100);
         })
         </script>
