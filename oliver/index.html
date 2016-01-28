@@ -1,8 +1,6 @@
 <html>
 <head>
     <title>Oliver's Page</title>
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>    
-        <style type="text/css">
     <style>
 .bright{color:light green;font-size:100px;}
     </style>
@@ -10,28 +8,6 @@
 <body bgcolor="#1E3296">
     <h1>My name is Baba </h1>
     <img src="http://loremflickr.com/500/500">
-     <script>
-            $(function() {
-            var base="#0000";
-            var change = 10;
-            var step=10
-            setInterval(function() { 
-                if (change>90)
-                {
-                	step=-10;
-                }
-                if (change < 10)
-                {
-                	step=10
-                }
-                change=change+step;
-								var colour=base+change;
-
-
-                $("body").css("background",colour);
-            }, 100);
-        })
-        </script>
 <h1 class="bright">Hello!</h1>
 </body>
 </html>
